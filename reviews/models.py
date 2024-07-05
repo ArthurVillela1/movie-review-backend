@@ -5,8 +5,13 @@ from django.db import models
 class Review(models.Model):
     text = models.TextField(max_length=300)
     created_at = models.DateTimeField(auto_now_add=True)
-    artist = models.ForeignKey(
+    movie = models.ForeignKey(
         "movies.Movie",
-        related_name = "comments",
+        related_name = "reviews",
         on_delete=models.CASCADE
+    )
+    createdby = models.ForeignKey(
+        "jwt_auth.User",
+        related_name="reviews",
+        on_delete = models.CASCADE
     )

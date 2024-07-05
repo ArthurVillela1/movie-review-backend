@@ -9,9 +9,5 @@ class Movie(models.Model):
     genre = models.CharField(max_length=50)
     director = models.CharField(max_length=50)
     releaseDate = models.FloatField()
-    createdby = models.ForeignKey(
-        "jwt_auth.User",
-        related_name="movies",
-        on_delete = models.CASCADE
-    )
+
     
