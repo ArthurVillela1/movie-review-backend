@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('/api/admin/', admin.site.urls),
-    path('/api/movies/', include('movies.urls')),
-    path('/api/auth/', include('jwt_auth.urls')),
+    path('admin/', admin.site.urls),
+    path('api/movies/', include('movies.urls')),
+    path('api/auth/', include('jwt_auth.urls')),
 ]
