@@ -20,3 +20,19 @@ class MovieListView(APIView):
 
     return Response(movie_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
+class MovieDetailView(APIView):
+# custom method to retrieve a book from the DB and error if it's not found
+  def get_movie(self, pk):
+    try:
+      return Movie.objects.get(pk=pk)
+    except Movie.DoesNotExist:
+      raise NotFound(detail="Can't find that movie") 
+      
+  def get(self, _request, pk):
+    try:
+      movie = Movie.objects.get(pk=pk)
+      serialized_movie = PopulatedMovieSerializer(movie)
+      return Response(serialized_movie.data, status=status.HTTP_200_OK)
+    except Movie.DoesNotExist:
+      raise NotFound(detail="Can't find that movie")
+
