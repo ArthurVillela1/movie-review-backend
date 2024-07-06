@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'movies',
     'reviews',
     'ratings',
+    'genres',
+    'directors',
     'jwt_auth'
 ]
 
