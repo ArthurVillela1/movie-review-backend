@@ -31,7 +31,7 @@ class MovieDetailView(APIView):
   def get(self, _request, pk):
     try:
       movie = Movie.objects.get(pk=pk)
-      serialized_movie = PopulatedMovieSerializer(movie)
+      serialized_movie = MovieSerializer(movie)
       return Response(serialized_movie.data, status=status.HTTP_200_OK)
     except Movie.DoesNotExist:
       raise NotFound(detail="Can't find that movie")
