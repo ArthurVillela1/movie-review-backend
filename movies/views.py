@@ -36,3 +36,16 @@ class MovieDetailView(APIView):
     except Movie.DoesNotExist:
       raise NotFound(detail="Can't find that movie")
 
+  def put(self, request, pk):
+      movie_to_update = self.get_movie(pk=pk)
+      updated_movie = MovieSerializer(movie_to_update, data=request.data)
+
+      if updated_movie.is_valid():
+          updated_movie.save()
+          return Response(updated_movie.data, status=status.HTTP_202_ACCEPTED)
+      return Response(updated_movie.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    
+  def delete(self, _request, pk):
+      movie_to_delete = self.get_movie(pk=pk)
+      movie_to_delete.delete()
+      return Response(status=status.HTTP_204_NO_CONTENT)
