@@ -12,8 +12,8 @@ class Movie(models.Model):
         related_name='movies',
         on_delete=models.CASCADE
     )
-    #director = models.ForeignKey(
-     #   'directors.Director',
-      #  related_name='movies',
-       # on_delete=models.CASCADE
-    #)
+    director = models.ForeignKey(
+        'directors.Director',
+        related_name='movies',
+        on_delete=models.CASCADE
+    )

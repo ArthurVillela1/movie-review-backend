@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/movies/', include('movies.urls')),
     path('api/genres/', include('genres.urls')),
-    #path('api/directors/', include('directors.urls')),
+    path('api/directors/', include('directors.urls')),
     path('api/auth/', include('jwt_auth.urls')),
 ]
