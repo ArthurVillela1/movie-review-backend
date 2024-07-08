@@ -1,7 +1,5 @@
 from .common import MovieSerializer
-#from reviews.serializers.common import ReviewSerializer
-#from ratings.serializers import RatingSerializer
+from genres.serializers.common import genreSerializer
 
 class PopulatedMovieSerializer(MovieSerializer):
-  review = "ReviewSerializer()"
-  ratings = "RatingSerializer(many=True)"
+    genre = genreSerializer()

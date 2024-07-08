@@ -1,8 +1,10 @@
 [
-    {
-        "name": "fargo",
-        "genre": "drama",
-        "director": "cohen brothers",
-        "releaseDate": "01/02/1998"
-    }
+{
+  "model": "movies.movie",
+  "pk": 2,
+  "fields": {
+    "name": "Dune2",
+    "releaseDate": 2020.0
+  }
+}
 ]
