@@ -4,7 +4,7 @@ from rest_framework import status # status gives us a list of official/possible 
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Director
 from .serializers.common import DirectorSerializer
-# from .serializers.populated import PopulatedMovieSerializer
+# from .serializers.populated import PopulatedDirectorSerializer
 
 class DirectorListView(APIView):
   def get(self, _request):
@@ -26,15 +26,15 @@ class DirectorDetailView(APIView):
     try:
       return Director.objects.get(pk=pk)
     except Director.DoesNotExist:
-      raise NotFound(detail="Can't find that movie") 
+      raise NotFound(detail="Can't find that director") 
       
   def get(self, _request, pk):
     try:
       director = Director.objects.get(pk=pk)
-      serialized_director = DirectorSerializer(movie)
+      serialized_director = DirectorSerializer(director)
       return Response(serialized_director.data, status=status.HTTP_200_OK)
     except Director.DoesNotExist:
-      raise NotFound(detail="Can't find that movie")
+      raise NotFound(detail="Can't find that director")
 
   def put(self, request, pk):
       director_to_update = self.get_director(pk=pk)

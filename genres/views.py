@@ -4,7 +4,7 @@ from rest_framework import status # status gives us a list of official/possible 
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Genre
 from .serializers.common import GenreSerializer
-# from .serializers.populated import PopulatedMovieSerializer
+# from .serializers.populated import PopulatedGenreSerializer
 
 class GenreListView(APIView):
   def get(self, _request):
@@ -32,10 +32,10 @@ class GenreDetailView(APIView):
   def get(self, _request, pk):
     try:
       genre = Genre.objects.get(pk=pk)
-      serialized_genre = GenreSerializer(movie)
+      serialized_genre = GenreSerializer(genre)
       return Response(serialized_genre.data, status=status.HTTP_200_OK)
     except Genre.DoesNotExist:
-      raise NotFound(detail="Can't find that movie")
+      raise NotFound(detail="Can't find that genre")
 
   def put(self, request, pk):
       genre_to_update = self.get_genre(pk=pk)

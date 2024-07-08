@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/movies/', include('movies.urls')),
     path('api/genres/', include('genres.urls')),
     path('api/directors/', include('directors.urls')),
+    path('api/reviews/', include('reviews.urls')),
     path('api/auth/', include('jwt_auth.urls')),
 ]
