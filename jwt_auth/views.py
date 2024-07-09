@@ -6,6 +6,7 @@ from datetime import datetime, timedelta # these create timestamps in different 
 from django.contrib.auth import get_user_model
 from django.conf import settings
 from . serializers import UserSerializer
+
 import jwt
 
 User = get_user_model()
