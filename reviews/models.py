@@ -12,7 +12,7 @@ class Review(models.Model):
         related_name = "reviews",
         on_delete=models.CASCADE
     )
-    createdby = models.ForeignKey(
+    owner = models.ForeignKey(
         "jwt_auth.User",
         related_name="reviews",
         on_delete = models.CASCADE

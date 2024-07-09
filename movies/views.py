@@ -4,12 +4,13 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Movie
 from .serializers.common import MovieSerializer
+from .serializers.populated import PopulatedMovieSerializer
 
 class MovieListView(APIView):
 
   def get(self, _request):
     movies = Movie.objects.all()
-    serialized_movies = MovieSerializer(movies, many=True)
+    serialized_movies = PopulatedMovieSerializer(movies, many=True)
     return Response(serialized_movies.data, status=status.HTTP_200_OK)
   
   def post(self, request):
@@ -31,7 +32,7 @@ class MovieDetailView(APIView):
   def get(self, _request, pk):
     try:
       movie = Movie.objects.get(pk=pk)
-      serialized_movie = MovieSerializer(movie)
+      serialized_movie = PopulatedMovieSerializer(movie)
       return Response(serialized_movie.data, status=status.HTTP_200_OK)
     except Movie.DoesNotExist:
       raise NotFound(detail="Can't find that movie")

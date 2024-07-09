@@ -4,13 +4,14 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Director
 from .serializers.common import DirectorSerializer
+from .serializers.populated import PopulatedDirectorSerializer
 
 class DirectorListView(APIView):
   permission_classes = (isAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     directors = director.objects.all()
-    serialized_directors = DirectorSerializer(directors, many=True)
+    serialized_directors = PopulatedDirectorSerializer(directors, many=True)
     return Response(serialized_directors.data, status=status.HTTP_200_OK)
   
   def post(self, request):
@@ -33,7 +34,7 @@ class DirectorDetailView(APIView):
   def get(self, _request, pk):
     try:
       director = Director.objects.get(pk=pk)
-      serialized_director = DirectorSerializer(director)
+      serialized_director = PopulatedDirectorSerializer(director)
       return Response(serialized_director.data, status=status.HTTP_200_OK)
     except Director.DoesNotExist:
       raise NotFound(detail="Can't find that director")
