@@ -14,6 +14,8 @@ class MovieListView(APIView):
     return Response(serialized_movies.data, status=status.HTTP_200_OK)
   
   def post(self, request):
+    if req.user.isAdmin = True
+    if req.user.username = admin
     movie_to_add = MovieSerializer(data=request.data)
     if movie_to_add.is_valid():
       movie_to_add.save()

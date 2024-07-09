@@ -3,6 +3,7 @@ from django.db import models
 class Movie(models.Model):
     def __str__(self):
         return f'{self.name}'
+    #isAdmin = models.Bolean(default=False)
     name = models.CharField(max_length=80, unique=True)
     releaseDate = models.FloatField()
     genre = models.ForeignKey(

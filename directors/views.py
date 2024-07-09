@@ -7,7 +7,7 @@ from .serializers.common import DirectorSerializer
 from .serializers.populated import PopulatedDirectorSerializer
 
 class DirectorListView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     directors = director.objects.all()
@@ -23,7 +23,7 @@ class DirectorListView(APIView):
     return Response(director_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class DirectorDetailView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get_director(self, pk):
     try:

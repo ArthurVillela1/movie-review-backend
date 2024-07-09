@@ -7,7 +7,7 @@ from .serializers.common import ReviewSerializer
 from .serializers.populated import PopulatedReviewSerializer
 
 class ReviewListView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     ewviews = Review.objects.all()
@@ -26,7 +26,7 @@ class ReviewListView(APIView):
     return Response(review_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class ReviewDetailView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get_review(self, pk):
     try:

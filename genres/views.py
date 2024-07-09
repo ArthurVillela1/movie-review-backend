@@ -7,7 +7,7 @@ from .serializers.common import GenreSerializer
 from .serializers.populated import PopulatedGenreSerializer
 
 class GenreListView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     genres = Genre.objects.all()
@@ -23,7 +23,7 @@ class GenreListView(APIView):
     return Response(genre_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class GenreDetailView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get_genre(self, pk):
     try:
