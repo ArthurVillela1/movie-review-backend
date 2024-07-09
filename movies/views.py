@@ -6,7 +6,6 @@ from .models import Movie
 from .serializers.common import MovieSerializer
 
 class MovieListView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     movies = Movie.objects.all()
@@ -22,7 +21,6 @@ class MovieListView(APIView):
     return Response(movie_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class MovieDetailView(APIView):
-  permission_classes = (isAuthenticatedOrReadOnly, )
 
   def get_movie(self, pk):
     try:
