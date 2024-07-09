@@ -6,4 +6,4 @@ from reviews.serializers.common import reviewSerializer
 class PopulatedGenreSerializer(GenreSerializer):
     movie = movieSerializer()
     director = directorSerializer()
-    review = reviewSerializer()
+    review = reviewSerializer(many=True)

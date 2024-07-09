@@ -1,9 +1,9 @@
 from .common import MovieSerializer
 from genres.serializers.common import genreSerializer
 from directors.serializers.common import directorSerializer
-from reviews.serializers.common import reviewSerializer
+from reviews.serializers.populated import populatedreviewSerializer
 
 class PopulatedMovieSerializer(MovieSerializer):
     genre = genreSerializer()
     director = directorSerializer()
-    review = reviewSerializer()
+    review = populatedReviewSerializer(many=True)
