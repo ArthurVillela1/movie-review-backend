@@ -1,10 +1,46 @@
 [
-{
-  "model": "movies.movie",
-  "pk": 2,
-  "fields": {
-    "name": "Dune2",
-    "releaseDate": 2020.0
+  {
+    "model": "movies.movie",
+    "pk": 1,
+    "fields": {
+      "name": "Pulp Fiction",
+      "poster": "posterurl",
+      "releaseDate": 1994.0,
+      "genre": 1,
+      "director": 1
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 2,
+    "fields": {
+      "name": "The Silence of the Lambs",
+      "poster": "posterurl",
+      "releaseDate": 2014.0,
+      "genre": 2,
+      "director": 1
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 3,
+    "fields": {
+      "name": "Taxi Driver",
+      "poster": "posterurl",
+      "releaseDate": 1976.0,
+      "genre": 2,
+      "director": 1
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 4,
+    "fields": {
+      "name": "Parasite",
+      "poster": "posterurl",
+      "releaseDate": 2020.0,
+      "genre": 2,
+      "director": 1
+    }
   }
-}
 ]

@@ -1,2 +1,10 @@
 [
+  {
+    "model": "directors.director",
+    "pk": 1,
+    "fields": {
+      "name": "Martin Scorsese"
+    }
+   }
+          
 ]

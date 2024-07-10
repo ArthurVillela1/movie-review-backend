@@ -5,6 +5,7 @@ class Movie(models.Model):
         return f'{self.name}'
     #isAdmin = models.Bolean(default=False)
     name = models.CharField(max_length=80, unique=True)
+    poster = models.CharField(max_length=500)
     releaseDate = models.FloatField()
     genre = models.ForeignKey(
         'genres.Genre',
