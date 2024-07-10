@@ -5,6 +5,138 @@
     "fields": {
       "name": "Martin Scorsese"
     }
-   }
-          
+   },
+   {
+    "model": "directors.director",
+    "pk": 2,
+    "fields": {
+      "name": "Christopher Nolan"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 3,
+    "fields": {
+      "name": "Quentin Tarantino"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 4,
+    "fields": {
+      "name": "Guilhermo Del Toro"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 5,
+    "fields": {
+      "name": "George Lucas"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 6,
+    "fields": {
+      "name": "Steven Spielberg"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 7,
+    "fields": {
+      "name": "David Fincher"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 8,
+    "fields": {
+      "name": "Ridley Scott"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 9,
+    "fields": {
+      "name": "Stanley Kubric"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 10,
+    "fields": {
+      "name": "Francis Ford Coppola"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 11,
+    "fields": {
+      "name": "Cohen Brothers"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 12,
+    "fields": {
+      "name": "Sam Mendes"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 13,
+    "fields": {
+      "name": "Denis Villeneuve"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 14,
+    "fields": {
+      "name": "Alejandro G. Iñárritu"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 15,
+    "fields": {
+      "name": "Woody Allen"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 16,
+    "fields": {
+      "name": "Wes Anderson"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 17,
+    "fields": {
+      "name": "James Cameron"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 18,
+    "fields": {
+      "name": "Tim Burton"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 19,
+    "fields": {
+      "name": "Fernando Meirelles"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 20,
+    "fields": {
+      "name": "Alfred Hitchcock"
+    }
+   }      
 ]
