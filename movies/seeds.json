@@ -4,10 +4,10 @@
     "pk": 1,
     "fields": {
       "name": "Pulp Fiction",
-      "poster": "posterurl",
+      "poster": "https://theposterdb.com/api/assets/12743/view",
       "releaseDate": 1994.0,
-      "genre": 1,
-      "director": 1
+      "genre": 2,
+      "director": 3
     }
   },
   {
@@ -15,10 +15,10 @@
     "pk": 2,
     "fields": {
       "name": "The Silence of the Lambs",
-      "poster": "posterurl",
+      "poster": "https://image.tmdb.org/t/p/original/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
       "releaseDate": 2014.0,
-      "genre": 2,
-      "director": 1
+      "genre": 1,
+      "director": 37
     }
   },
   {
@@ -26,9 +26,9 @@
     "pk": 3,
     "fields": {
       "name": "Taxi Driver",
-      "poster": "posterurl",
+      "poster": "https://theposterdb.com/api/assets/54257/view",
       "releaseDate": 1976.0,
-      "genre": 2,
+      "genre": 1,
       "director": 1
     }
   },
@@ -37,10 +37,10 @@
     "pk": 4,
     "fields": {
       "name": "Parasite",
-      "poster": "posterurl",
+      "poster": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
       "releaseDate": 2020.0,
-      "genre": 2,
-      "director": 1
+      "genre": 1,
+      "director": 32
     }
   }
 ]
