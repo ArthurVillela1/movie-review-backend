@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Pulp Fiction",
-      "poster": "https://theposterdb.com/api/assets/12743/view",
+      "poster": "https://image.tmdb.org/t/p/original/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
       "releaseDate": 1994.0,
       "genre": 2,
       "director": 3
@@ -26,7 +26,7 @@
     "pk": 3,
     "fields": {
       "name": "Taxi Driver",
-      "poster": "https://theposterdb.com/api/assets/54257/view",
+      "poster": "https://images.justwatch.com/poster/308916776/s718/taxi-driver.jpg",
       "releaseDate": 1976.0,
       "genre": 1,
       "director": 1
