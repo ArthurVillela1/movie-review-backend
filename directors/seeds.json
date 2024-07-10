@@ -138,5 +138,152 @@
     "fields": {
       "name": "Alfred Hitchcock"
     }
-   }      
+   },
+   {
+    "model": "directors.director",
+    "pk": 21,
+    "fields": {
+      "name": "Roman Polanski"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 22,
+    "fields": {
+      "name": "Terry Gilliam"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 23,
+    "fields": {
+      "name": "Spike Lee"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 24,
+    "fields": {
+      "name": "Antonie Fuqua"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 25,
+    "fields": {
+      "name": "Akira Kurosawa"
+    }
+   },     
+   {
+    "model": "directors.director",
+    "pk": 26,
+    "fields": {
+      "name": "Brian De Palma"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 27,
+    "fields": {
+      "name": "Michael Mann"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 28,
+    "fields": {
+      "name": "Damien Chazelle"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 29,
+    "fields": {
+      "name": "Paul Thomas Anderson"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 30,
+    "fields": {
+      "name": "Lilly Wachowski"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 31,
+    "fields": {
+      "name": "Martin McDonagh"
+    }
+   },     
+   {
+    "model": "directors.director",
+    "pk": 32,
+    "fields": {
+      "name": "Bong Joon Ho"
+    }
+   },  
+   {
+    "model": "directors.director",
+    "pk": 32,
+    "fields": {
+      "name": "Spike Jonze"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 33,
+    "fields": {
+      "name": "Steve McQueen"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 34,
+    "fields": {
+      "name": "Adam McKay"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 35,
+    "fields": {
+      "name": "Greta Gerwig"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 36,
+    "fields": {
+      "name": "Michael Bay"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 37,
+    "fields": {
+      "name": "Jonathan Demme"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 38,
+    "fields": {
+      "name": "Sofia Coppola"
+    }
+   },  
+   {
+    "model": "directors.director",
+    "pk": 39,
+    "fields": {
+      "name": "Ruben Östlund"
+    }
+   },  
+   {
+    "model": "directors.director",
+    "pk": 40,
+    "fields": {
+      "name": "Chloé Zhao"
+    }
+   },    
 ]
