@@ -13,3 +13,4 @@ class User(AbstractUser):
                 code="invalid_registration",
                 ),
             ],)
+

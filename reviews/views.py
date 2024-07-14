@@ -43,7 +43,7 @@ class ReviewDetailView(APIView):
       raise NotFound(detail="Can't find that review")
 
   def put(self, request, pk):
-      mreview_to_update = self.get_review(pk=pk)
+      review_to_update = self.get_review(pk=pk)
 
       if review_to_update.owner != request.user:
         return Response(status=status.HTTP_401_UNAUTHORIZED)
