@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import Avg
+from reviews.models import Review
 
 class Movie(models.Model):
     def __str__(self):
@@ -17,3 +19,8 @@ class Movie(models.Model):
         related_name='movies',
         on_delete=models.CASCADE
     )
+
+    def average_rating(self):
+        reviews = Review.objects.filter(movie=self)
+        average = reviews.aggregate(Avg('ratings'))['ratings__avg']
+        return average if average is not None else 0.0
