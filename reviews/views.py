@@ -5,26 +5,26 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Review
 from .serializers.common import ReviewSerializer
 from .serializers.populated import PopulatedReviewSerializer
+from rest_framework.exceptions import ValidationError
 
 class ReviewListView(APIView):
-  permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
-  def get(self, _request):
-    ewviews = Review.objects.all()
-    serialized_reviews = PopulatedReviewSerializer(reviews, many=True)
-    return Response(serialized_reviews.data, status=status.HTTP_200_OK)
-  
-  def post(self, request):
-    request.data["owner"] = request.user.id
-    print("REQUEST DATA", request.data)
+    def post(self, request):
+        user = request.user
+        movie_id = request.data.get('movie')
 
-    review_to_add = ReviewSerializer(data=request.data)
-    if review_to_add.is_valid():
-      review_to_add.save()
-      return Response(review_to_add.data, status=status.HTTP_201_CREATED)
+        # Check if the user has already reviewed the movie
+        if Review.objects.filter(owner=user, movie_id=movie_id).exists():
+            raise ValidationError("You have already reviewed this movie.")
 
-    return Response(review_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-
+        # Proceed with creating the review if not already reviewed
+        request.data["owner"] = user.id
+        review_to_add = ReviewSerializer(data=request.data)
+        if review_to_add.is_valid():
+            review_to_add.save()
+            return Response(review_to_add.data, status=status.HTTP_201_CREATED)
+        return Response(review_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 class ReviewDetailView(APIView):
   permission_classes = (IsAuthenticatedOrReadOnly, )
 
