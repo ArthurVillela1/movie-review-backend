@@ -73,7 +73,7 @@
     "model": "directors.director",
     "pk": 11,
     "fields": {
-      "name": "Cohen Brothers"
+      "name": "Coen Brothers"
     }
    },
    {
@@ -225,65 +225,191 @@
    },  
    {
     "model": "directors.director",
-    "pk": 32,
+    "pk": 33,
     "fields": {
       "name": "Spike Jonze"
     }
    },
    {
     "model": "directors.director",
-    "pk": 33,
+    "pk": 34,
     "fields": {
       "name": "Steve McQueen"
     }
    },
    {
     "model": "directors.director",
-    "pk": 34,
+    "pk": 35,
     "fields": {
       "name": "Adam McKay"
     }
    }, 
    {
     "model": "directors.director",
-    "pk": 35,
+    "pk": 36,
     "fields": {
       "name": "Greta Gerwig"
     }
    }, 
    {
     "model": "directors.director",
-    "pk": 36,
+    "pk": 37,
     "fields": {
       "name": "Michael Bay"
     }
    }, 
    {
     "model": "directors.director",
-    "pk": 37,
+    "pk": 38,
     "fields": {
       "name": "Jonathan Demme"
     }
    },
    {
     "model": "directors.director",
-    "pk": 38,
+    "pk": 39,
     "fields": {
       "name": "Sofia Coppola"
     }
    },  
    {
     "model": "directors.director",
-    "pk": 39,
+    "pk": 40,
     "fields": {
       "name": "Ruben Östlund"
     }
    },  
    {
     "model": "directors.director",
-    "pk": 40,
+    "pk": 41,
     "fields": {
       "name": "Chloé Zhao"
     }
-   }    
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 42,
+    "fields": {
+      "name": "Joseph Kosinski"
+    }
+   }, 
+   {
+    "model": "directors.director",
+    "pk": 43,
+    "fields": {
+      "name": "Matthew Vaughn"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 44,
+    "fields": {
+      "name": "Adrian Lyne"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 45,
+    "fields": {
+      "name": "Tom Hooper"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 46,
+    "fields": {
+      "name": "William Eubank"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 47,
+    "fields": {
+      "name": "Jordan Peele"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 48,
+    "fields": {
+      "name": "Francis Lawrence"
+    }
+   },                
+   {
+    "model": "directors.director",
+    "pk": 49,
+    "fields": {
+      "name": "Daniel Scheinert"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 50,
+    "fields": {
+      "name": "John Krasinski"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 51,
+    "fields": {
+      "name": "Alejandro González Iñárritu"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 52,
+    "fields": {
+      "name": "Kenya Barris"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 53,
+    "fields": {
+      "name": "Nicolas Winding Refn"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 54,
+    "fields": {
+      "name": "David Ayer"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 55,
+    "fields": {
+      "name": "M. Night Shyamalan"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 56,
+    "fields": {
+      "name": "Ruben Fleischer"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 57,
+    "fields": {
+      "name": "Kevin Connolly"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 58,
+    "fields": {
+      "name": "David Gordon Green"
+    }
+   },
+   {
+    "model": "directors.director",
+    "pk": 59,
+    "fields": {
+      "name": "Frank Darabont"
+    }
+   }                   
 ]

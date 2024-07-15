@@ -68,5 +68,12 @@
     "fields": {
       "name": "Horror"
     }
+  },
+  {
+    "model": "genres.genre",
+    "pk": 11,
+    "fields": {
+      "name": "Thriller"
+    }
   }
 ]

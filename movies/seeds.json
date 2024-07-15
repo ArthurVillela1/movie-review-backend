@@ -16,7 +16,7 @@
     "fields": {
       "name": "The Silence of the Lambs",
       "poster": "https://image.tmdb.org/t/p/original/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
-      "releaseDate": 2014.0,
+      "releaseDate": 1991.0,
       "genre": 1,
       "director": 37
     }
@@ -41,6 +41,358 @@
       "releaseDate": 2020.0,
       "genre": 1,
       "director": 32
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 5,
+    "fields": {
+      "name": "Top Gun: Maverick",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+      "releaseDate": 2022.0,
+      "genre": 3,
+      "director": 42
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 6,
+    "fields": {
+      "name": "Whiplash",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+      "releaseDate": 2014.0,
+      "genre": 1,
+      "director": 28
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 7,
+    "fields": {
+      "name": "Argylle",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/siduVKgOnABO4WH4lOwPQwaGwJp.jpg",
+      "releaseDate": 2024.0,
+      "genre": 3,
+      "director": 43
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 8,
+    "fields": {
+      "name": "Deep Water",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6yRMyWwjuhKg6IU66uiZIGhaSc8.jpg",
+      "releaseDate": 2022.0,
+      "genre": 1,
+      "director": 44
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 9,
+    "fields": {
+      "name": "The King's Speech",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uQ538BfYLDJh3GXlzRZLo0j7PFj.jpg",
+      "releaseDate": 2010.0,
+      "genre": 1,
+      "director": 45
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 10,
+    "fields": {
+      "name": "Underwater",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg",
+      "releaseDate": 2020.0,
+      "genre": 7,
+      "director": 46
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 11,
+    "fields": {
+      "name": "No Country for Old Men",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg",
+      "releaseDate": 2007.0,
+      "genre": 1,
+      "director": 11
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 12,
+    "fields": {
+      "name": "Cats",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aCNch5FmzT2WaUcY44925owIZXY.jpg",
+      "releaseDate": 2019.0,
+      "genre": 1,
+      "director": 45
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 13,
+    "fields": {
+      "name": "Whatever Works",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7yMpnI8cxlcFdFGcjlNY134NMlH.jpg",
+      "releaseDate": 2009.0,
+      "genre": 2,
+      "director": 15
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 14,
+    "fields": {
+      "name": "City of God",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+      "releaseDate": 2002.0,
+      "genre": 1,
+      "director": 19
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 15,
+    "fields": {
+      "name": "The Big Lebowski",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9mprbw31MGdd66LR0AQKoDMoFRv.jpg",
+      "releaseDate": 1998.0,
+      "genre": 2,
+      "director": 11
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 16,
+    "fields": {
+      "name": "Dune",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "releaseDate": 2021.0,
+      "genre": 1,
+      "director": 13
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 17,
+    "fields": {
+      "name": "Dune: Part Two",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
+      "releaseDate": 2024.0,
+      "genre": 1,
+      "director": 13
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 18,
+    "fields": {
+      "name": "La La Land",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+      "releaseDate": 2016.0,
+      "genre": 4,
+      "director": 28
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 19,
+    "fields": {
+      "name": "Babylon",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6E50WjeOYjDZg9HXgPjYdGtY2jG.jpg",
+      "releaseDate": 2022.0,
+      "genre": 2,
+      "director": 28
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 20,
+    "fields": {
+      "name": "Triangle of Sadness",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k9eLozCgCed5FGTSdHu0bBElAV8.jpg",
+      "releaseDate": 2022.0,
+      "genre": 2,
+      "director": 40
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 21,
+    "fields": {
+      "name": "Bunshees of Inisherin",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4yFG6cSPaCaPhyJ1vtGOtMD1lgh.jpg",
+      "releaseDate": 2022.0,
+      "genre": 2,
+      "director": 31
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 22,
+    "fields": {
+      "name": "Get Out",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+      "releaseDate": 2017.0,
+      "genre":11,
+      "director": 47
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 23,
+    "fields": {
+      "name": "Red Sparrow",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vLCogyfQGxVLDC1gqUdNAIkc29L.jpg",
+      "releaseDate": 2018.0,
+      "genre":3,
+      "director": 48
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 24,
+    "fields": {
+      "name": "Everything Everywhere All at Once",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+      "releaseDate": 2022.0,
+      "genre":7,
+      "director": 49
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 25,
+    "fields": {
+      "name": "A Quite Place",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "releaseDate": 2018.0,
+      "genre":11,
+      "director": 50
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 26,
+    "fields": {
+      "name": "Birdman",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rHUg2AuIuLSIYMYFgavVwqt1jtc.jpg",
+      "releaseDate": 2014.0,
+      "genre":1,
+      "director": 51
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 27,
+    "fields": {
+      "name": "You People",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x5E4TndwASNkaK2hwgeYfsIVo2x.jpg",
+      "releaseDate": 2023.0,
+      "genre":2,
+      "director": 52
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 28,
+    "fields": {
+      "name": "Drive",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+      "releaseDate": 2011.0,
+      "genre":3,
+      "director": 53
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 29,
+    "fields": {
+      "name": "Tenet",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k68nPLbIST6NP96JmTxmZijEvCA.jpg",
+      "releaseDate": 2020.0,
+      "genre":7,
+      "director": 2
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 30,
+    "fields": {
+      "name": "Goodfellas",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+      "releaseDate": 1990.0,
+      "genre":2,
+      "director": 1
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 31,
+    "fields": {
+      "name": "The Tax Collector",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3eg0kGC2Xh0vhydJHO37Sp4cmMt.jpg",
+      "releaseDate": 2020.0,
+      "genre":3,
+      "director": 54
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 32,
+    "fields": {
+      "name": "Glass",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
+      "releaseDate": 2019.0,
+      "genre":3,
+      "director": 55
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 33,
+    "fields": {
+      "name": "Venom",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+      "releaseDate": 2018.0,
+      "genre":3,
+      "director": 56
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 34,
+    "fields": {
+      "name": "1917",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+      "releaseDate": 2019.0,
+      "genre":3,
+      "director": 12
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 35,
+    "fields": {
+      "name": "Shawshank Redemption",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "releaseDate": 1994.0,
+      "genre":1,
+      "director": 59
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 36,
+    "fields": {
+      "name": "Inglorious Basterds",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+      "releaseDate": 2009.0,
+      "genre":2,
+      "director": 3
     }
   }
 ]
