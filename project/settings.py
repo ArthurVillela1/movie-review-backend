@@ -10,15 +10,26 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
+import django_on_heroku
+from dotenv import load_dotenv
+import dj_database_url
+load_dotenv()
+
+ENV = str(os.getenv('ENVIRONMENT', 'DEV'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-hnhwdd82g8&j@@(9hb=h16p44mvsgn@d*c6#y0-a*-8+w2wd06'
+if ENV == 'DEV':
+    # Replace the value below with your own secret and remove this comment.
+    SECRET_KEY = 'django-insecure-kjwpunl0@d45ablg)wu5fi&688xem^3=(mg@j&)o-x06rmulh)'
+else:
+    SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
-DEBUG = True
+DEBUG = ENV == 'DEV'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -72,8 +83,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
-DATABASES = {
-    'default': {
+DATABASES = {}
+if ENV != 'DEV':
+     DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))	
+else:
+     DATABASES['default'] =  {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'movies-api',
         'HOST': 'localhost',
@@ -81,7 +95,6 @@ DATABASES = {
         'USER': 'admin',
         'PASSWORD': 'admin'
     }
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -120,3 +133,4 @@ REST_FRAMEWORK = {
     ]
 }
 
+django_on_heroku.settings(locals())
