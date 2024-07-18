@@ -1,6 +1,6 @@
 # Movie Review App
 
-Movie Review App is a CRUD application where users are able to leave reviews and ratings for movies as well as see how other users rated and reviewed each movie. The average user rating is displayed on the landing page under the movie poster. When using this app, Users will be able to click on the 'Review' button to be redirected to a different page where they can post, update and delete their rating and review.
+Movie Review App is a CRUD application where users are able to leave reviews and ratings for movies as well as see how other users rated and reviewed each movie. The average user rating is displayed on the landing page under the movie poster. When using this app, users will be able to click on the 'Review' button to be redirected to a different page where they can post, update and delete their rating and review.
 
 [Click here to use this app](https://movie-review-fe.netlify.app/)
 
